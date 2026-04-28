@@ -3,7 +3,7 @@
 > Personal portfolio of Harsh Tatiwal · Frontend Developer & UI/UX Designer
 
 ## 🌐 Live
-[saturdyyyy.vercel.app](https://saturdyyyy.vercel.app)
+[saturdyyyy]([https://saturdyyyy.vercel.app](https://portfolio-saturdyyyy.vercel.app/))
 
 ## 🎨 Built With
 - HTML · CSS · Vanilla JS
