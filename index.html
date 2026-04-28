@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saturdyyyy — Harsh T</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;700&family=Fragment+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dot-grid"></div>
+  <div class="zoom-ov" id="zo"><div class="zoom-l" id="zl"></div></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="datetime-widget">
+      <div class="dt-time" id="clock">00:00:00</div>
+      <div class="dt-date" id="dt">MON, 01 JAN 2025</div>
+    </div>
+
+    <div class="saturdy-nav">
+      <div class="nav-lw active" data-s="soundcheck" data-l="S"><span class="nav-l scramble" data-text="S">S</span><div class="nav-dot"></div><div class="nav-tip">SOUNDCHECK</div></div>
+      <div class="nav-lw" data-s="alter-ego" data-l="A"><span class="nav-l scramble" data-text="A">A</span><div class="nav-dot"></div><div class="nav-tip">ALTER EGO</div></div>
+      <div class="nav-lw" data-s="tracklist" data-l="T"><span class="nav-l scramble" data-text="T">T</span><div class="nav-dot"></div><div class="nav-tip">TRACKLIST</div></div>
+      <div class="nav-lw" data-s="unreleased" data-l="U"><span class="nav-l scramble" data-text="U">U</span><div class="nav-dot"></div><div class="nav-tip">UNRELEASED</div></div>
+      <div class="nav-lw" data-s="reverb" data-l="R"><span class="nav-l scramble" data-text="R">R</span><div class="nav-dot"></div><div class="nav-tip">REVERB</div></div>
+      <div class="nav-lw" data-s="directors-cut" data-l="D"><span class="nav-l scramble" data-text="D">D</span><div class="nav-dot"></div><div class="nav-tip">DIRECTOR'S CUT</div></div>
+      <div class="nav-lw" data-s="now-playing" data-l="Y"><span class="nav-l scramble" data-text="Y">Y</span><div class="nav-dot"></div><div class="nav-tip">NOW PLAYING</div></div>
+    </div>
+
+    <!-- NAV RIGHT: mini player + avatar -->
+    <div class="nav-right">
+      <!-- MINI SPOTIFY PLAYER -->
+      <div class="mini-player" id="miniPlayer">
+        <div class="mini-album" id="miniAlbum">🎵</div>
+        <div class="mini-info">
+          <div class="mini-track" id="miniTrack">NOT PLAYING</div>
+          <div class="mini-artist" id="miniArtist">SPOTIFY</div>
+        </div>
+        <div class="mini-controls">
+          <button class="mini-btn" id="miniPrev" title="Previous">⏮</button>
+          <button class="mini-btn mini-play" id="miniPlay" title="Play/Pause">▶</button>
+          <button class="mini-btn" id="miniNext" title="Next">⏭</button>
+        </div>
+      </div>
+      <div class="avatar-img-wrap" title="Saturdyyyy">
+        <img src="avatar.jpg" alt="Saturdyyyy" class="avatar-img"/>
+      </div>
+    </div>
+  </nav>
+
+  <!-- TICKER TOP -->
+  <div class="ticker" style="margin-top:69px;">
+    <div class="ticker-inner">
+      <span class="ticker-text">SOUNDCHECK</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">ALTER EGO</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">TRACKLIST</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">UNRELEASED</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">REVERB</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">DIRECTOR'S CUT</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">NOW PLAYING</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">SOUNDCHECK</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">ALTER EGO</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">TRACKLIST</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">UNRELEASED</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">REVERB</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">DIRECTOR'S CUT</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">NOW PLAYING</span><span class="ticker-sep">·</span>
+    </div>
+  </div>
+
+  <!-- S — SOUNDCHECK -->
+  <section id="soundcheck">
+    <canvas id="dotsCanvas"></canvas>
+    <img src="avatar.jpg" alt="" class="hero-bg-char" aria-hidden="true"/>
+    <div class="xh" style="top:130px;left:160px;"></div>
+    <div class="xh" style="bottom:140px;right:200px;"></div>
+    <div class="hero-content">
+      <div class="sec-tag">S — SOUNDCHECK</div>
+      <div class="hero-title">
+        HARSH T<br>
+        <span class="outline">SATUR</span><span class="dim">DYYYY</span>
+      </div>
+      <div class="hero-role scramble" data-text="FRONT-END DEVELOPER · UI/UX DESIGNER · BRIDGING ENGINEERING & VISUAL DESIGN">FRONT-END DEVELOPER · UI/UX DESIGNER · BRIDGING ENGINEERING & VISUAL DESIGN</div>
+      <div class="hero-sub">
+        Building responsive web experiences. <strong>Design-aware.</strong><br>
+        React · Node.js · Figma · PostgreSQL · HTML · CSS · JS<br>
+        <span class="muted">Jaipur, Rajasthan, India · 🌴 Open to Work</span>
+      </div>
+      <div class="hero-links">
+        <a href="mailto:arnodelo4@gmail.com" class="hero-btn">EMAIL</a>
+        <a href="https://www.linkedin.com/in/harsh-t-b8712623b" target="_blank" class="hero-btn">LINKEDIN</a>
+        <a href="https://github.com/Saturdyyyy" target="_blank" class="hero-btn">GITHUB</a>
+        <a href="https://www.instagram.com/saturdyyyyyy/" target="_blank" class="hero-btn">INSTAGRAM</a>
+        <a href="tel:+918003110904" class="hero-btn">CONTACT</a>
+      </div>
+    </div>
+    <div class="floating-notes" aria-hidden="true">
+      <span class="note n1">♪</span><span class="note n2">♫</span>
+      <span class="note n3">♩</span><span class="note n4">♬</span><span class="note n5">♭</span>
+    </div>
+    <div class="scroll-cue"><div class="scroll-line"></div>SCROLL TO EXPLORE</div>
+  </section>
+
+  <!-- SATURDY BIG NAV -->
+  <div id="saturdy-display">
+    <div class="big-lw active" data-s="soundcheck" data-l="S"><div class="big-l scramble" data-text="S">S</div><div class="big-ll">SOUNDCHECK</div></div>
+    <div class="big-lw" data-s="alter-ego" data-l="A"><div class="big-l scramble" data-text="A">A</div><div class="big-ll">ALTER EGO</div></div>
+    <div class="big-lw" data-s="tracklist" data-l="T"><div class="big-l scramble" data-text="T">T</div><div class="big-ll">TRACKLIST</div></div>
+    <div class="big-lw" data-s="unreleased" data-l="U"><div class="big-l scramble" data-text="U">U</div><div class="big-ll">UNRELEASED</div></div>
+    <div class="big-lw" data-s="reverb" data-l="R"><div class="big-l scramble" data-text="R">R</div><div class="big-ll">REVERB</div></div>
+    <div class="big-lw" data-s="directors-cut" data-l="D"><div class="big-l scramble" data-text="D">D</div><div class="big-ll">DIRECTOR'S CUT</div></div>
+    <div class="big-lw" data-s="now-playing" data-l="Y"><div class="big-l scramble" data-text="Y">Y</div><div class="big-ll">NOW PLAYING</div></div>
+  </div>
+
+  <!-- TICKER TECH -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-text">REACT.JS</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">NODE.JS</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">POSTGRESQL</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">FIGMA</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">PYTHON</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">ADOBE CC</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">CANVA</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">C/C++</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">HTML · CSS · JS</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">SALESFORCE</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">REACT.JS</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">NODE.JS</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">POSTGRESQL</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">FIGMA</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">PYTHON</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">ADOBE CC</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">CANVA</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">C/C++</span><span class="ticker-sep">·</span>
+      <span class="ticker-text">SALESFORCE</span><span class="ticker-sep">·</span>
+    </div>
+  </div>
+
+  <!-- A — ALTER EGO -->
+  <section id="alter-ego">
+    <div class="sec-tag">A — ALTER EGO</div>
+    <div class="sec-head"><div class="sec-name scramble" data-text="ALTER EGO">ALTER EGO</div><div class="sec-sub">// ABOUT</div></div>
+    <div class="two-grid">
+      <div class="grid-cell">
+        <div class="cell-label">// WHO AM I</div>
+        <div class="about-title">HARSH T.<br><span class="outline-text">SATURDYYYY.</span><br>FRONTEND DEV.</div>
+        <div class="about-desc">Front-End Developer with hands-on experience building responsive web applications using React and Node.js. Skilled in UI/UX design with Figma. Passionate about creating clean, user-focused digital experiences. Bridging Technical Engineering & Visual Design.</div>
+        <div class="github-quote">"Code is like humor. When you have to explain it, if it's bad."</div>
+        <svg viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" class="waveform-svg">
+          <polyline points="0,30 10,20 20,40 30,10 40,50 50,25 60,35 70,15 80,45 90,22 100,38 110,12 120,48 130,28 140,32 150,8 160,52 170,20 180,40 190,18 200,42 210,24 220,36 230,14 240,46 250,26 260,34 270,16 280,44 290,22 300,30" fill="none" stroke="#3cda7e" stroke-width="1.5" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="grid-cell dark">
+        <div class="cell-label">// QUICK STATS</div>
+        <div class="stat-row"><div class="stat-label">ROLE</div><div class="stat-val">FRONTEND DEV · UI/UX DESIGNER</div></div>
+        <div class="stat-row"><div class="stat-label">STACK</div><div class="stat-val">REACT · NODE · POSTGRESQL · FIGMA</div></div>
+        <div class="stat-row"><div class="stat-label">DEGREE</div><div class="stat-val">B.TECH · JECRC · 2028</div></div>
+        <div class="stat-row"><div class="stat-label">GITHUB</div><div class="stat-val"><a href="https://github.com/Saturdyyyy" target="_blank" class="stat-link">@SATURDYYYY</a></div></div>
+        <div class="stat-row"><div class="stat-label">INSTAGRAM</div><div class="stat-val"><a href="https://www.instagram.com/saturdyyyyyy/" target="_blank" class="stat-link">@SATURDYYYYYY</a></div></div>
+        <div class="stat-row"><div class="stat-label">STATUS</div><div class="stat-val status-open"><span class="blink-dot"></span>OPEN TO WORK</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- T — TRACKLIST -->
+  <section id="tracklist">
+    <div class="sec-tag">T — TRACKLIST</div>
+    <div class="sec-head"><div class="sec-name scramble" data-text="TRACKLIST">TRACKLIST</div><div class="sec-sub">// SKILLS</div></div>
+    <div class="freq-bars" aria-hidden="true">
+      <div class="fb"></div><div class="fb"></div><div class="fb"></div><div class="fb"></div>
+      <div class="fb"></div><div class="fb"></div><div class="fb"></div><div class="fb"></div>
+      <div class="fb"></div><div class="fb"></div><div class="fb"></div><div class="fb"></div>
+      <div class="fb"></div><div class="fb"></div><div class="fb"></div><div class="fb"></div>
+      <div class="fb"></div><div class="fb"></div><div class="fb"></div><div class="fb"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cell" data-n="01"><div class="skill-name scramble" data-text="HTML / CSS">HTML / CSS</div><div class="skill-type">FOUNDATION</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div></div></div>
+      <div class="skill-cell" data-n="02"><div class="skill-name scramble" data-text="JAVASCRIPT">JAVASCRIPT</div><div class="skill-type">CORE LANGUAGE</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="03"><div class="skill-name scramble" data-text="REACT.JS">REACT.JS</div><div class="skill-type">FRONTEND FRAMEWORK</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="04"><div class="skill-name scramble" data-text="NODE.JS">NODE.JS</div><div class="skill-type">BACKEND RUNTIME</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="05"><div class="skill-name scramble" data-text="POSTGRESQL">POSTGRESQL</div><div class="skill-type">DATABASE</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="06"><div class="skill-name scramble" data-text="FIGMA">FIGMA</div><div class="skill-type">UI/UX DESIGN</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="07"><div class="skill-name scramble" data-text="PYTHON">PYTHON</div><div class="skill-type">SCRIPTING · DATA</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="08"><div class="skill-name scramble" data-text="ADOBE CC">ADOBE CC</div><div class="skill-type">CREATIVE SUITE</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="09"><div class="skill-name scramble" data-text="CANVA">CANVA</div><div class="skill-type">DESIGN · BRANDING</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="10"><div class="skill-name scramble" data-text="C / C++">C / C++</div><div class="skill-type">SYSTEMS PROGRAMMING</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="11"><div class="skill-name scramble" data-text="SALESFORCE">SALESFORCE</div><div class="skill-type">CRM PLATFORM</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd"></div><div class="sd"></div><div class="sd"></div></div></div>
+      <div class="skill-cell" data-n="12"><div class="skill-name scramble" data-text="SQL">SQL</div><div class="skill-type">ORACLE · QUERIES</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div><div class="sd"></div></div></div>
+    </div>
+    <div class="lang-row">
+      <div class="lang-item"><div class="cell-label">// ENGLISH</div><div class="skill-name scramble" data-text="PROFICIENT" style="font-size:22px;">PROFICIENT</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd on"></div><div class="sd"></div></div></div>
+      <div class="lang-item"><div class="cell-label">// FRENCH</div><div class="skill-name scramble" data-text="INTERMEDIATE" style="font-size:22px;">INTERMEDIATE</div><div class="skill-dots"><div class="sd on"></div><div class="sd on"></div><div class="sd"></div><div class="sd"></div><div class="sd"></div></div></div>
+    </div>
+  </section>
+
+  <!-- U — UNRELEASED -->
+  <section id="unreleased">
+    <div class="sec-tag">U — UNRELEASED</div>
+    <div class="sec-head"><div class="sec-name scramble" data-text="UNRELEASED">UNRELEASED</div><div class="sec-sub">// PROJECTS</div></div>
+    <div class="proj-grid">
+      <div class="proj-card feat">
+        <div class="cn tl"></div><div class="cn tr"></div><div class="cn bl"></div><div class="cn br"></div>
+        <div class="proj-bg">SF</div>
+        <div class="proj-num">// DROP 001 · FEATURED · IN PROGRESS</div>
+        <div class="proj-title scramble" data-text="STREAMFUSION">STREAM<br>FUSION</div>
+        <div class="proj-desc">Spotify × Netflix unified platform. Cross-media AI recommendations, Watch Party, Scene Soundtrack & Mood Sync engine.</div>
+        <div class="proj-tags"><div class="ptag">REACT</div><div class="ptag">NODE.JS</div><div class="ptag">MONGODB</div><div class="ptag">SOCKET.IO</div><div class="ptag">SPOTIFY API</div></div>
+        <a href="https://github.com/Saturdyyyy" target="_blank" class="proj-gh-link">VIEW ON GITHUB ↗</a>
+      </div>
+      <div class="proj-stack">
+        <div class="proj-card">
+          <div class="proj-num">// DROP 002 · FREELANCE</div>
+          <div class="proj-title scramble" data-text="3+ WEB APPS" style="font-size:26px;">3+ WEB<br>APPS</div>
+          <div class="proj-desc">Responsive web apps built with React & Node.js. PostgreSQL backends. Figma-first design process.</div>
+        </div>
+        <div class="proj-card" style="background:#050505;">
+          <div class="proj-num">// DROP 003 · 3D EXPERIMENTS</div>
+          <div class="proj-title scramble" data-text="PROJECT 101" style="font-size:26px;">PROJECT<br>101</div>
+          <div class="proj-desc">Demo website exploring how 3D models work and the functionality behind the code.</div>
+          <a href="https://github.com/Saturdyyyy/Project-101" target="_blank" class="proj-gh-link">VIEW ON GITHUB ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="gh-stats-strip">
+      <div class="gh-stat"><div class="gh-stat-num scramble" data-text="3+">3+</div><div class="gh-stat-label">PROJECTS</div></div>
+      <div class="gh-stat-div"></div>
+      <div class="gh-stat"><div class="gh-stat-num scramble" data-text="2024">2024</div><div class="gh-stat-label">ACTIVE SINCE</div></div>
+      <div class="gh-stat-div"></div>
+      <div class="gh-stat"><div class="gh-stat-num scramble" data-text="MERN">MERN</div><div class="gh-stat-label">PRIMARY STACK</div></div>
+      <div class="gh-stat-div"></div>
+      <div class="gh-stat"><div class="gh-stat-num scramble" data-text="∞">∞</div><div class="gh-stat-label">CURIOSITY</div></div>
+    </div>
+  </section>
+
+  <!-- R — REVERB -->
+  <section id="reverb">
+    <div class="sec-tag">R — REVERB</div>
+    <div class="sec-head"><div class="sec-name scramble" data-text="REVERB">REVERB</div><div class="sec-sub">// CONTACT</div></div>
+    <div class="contact-statement">
+      <span class="cs-line scramble" data-text="LET'S BUILD">LET'S BUILD</span><br>
+      <span class="cs-line outline-big scramble" data-text="SOMETHING">SOMETHING</span><br>
+      <span class="cs-line scramble" data-text="WORTH PLAYING">WORTH PLAYING</span>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:arnodelo4@gmail.com" class="cc"><div class="cc-label">// EMAIL</div><div class="cc-val">ARNODELO4@GMAIL.COM</div><div class="cc-arrow">↗</div></a>
+      <a href="https://www.linkedin.com/in/harsh-t-b8712623b" target="_blank" class="cc"><div class="cc-label">// LINKEDIN</div><div class="cc-val">LINKEDIN/HARSH-T</div><div class="cc-arrow">↗</div></a>
+      <a href="https://github.com/Saturdyyyy" target="_blank" class="cc"><div class="cc-label">// GITHUB</div><div class="cc-val">@SATURDYYYY</div><div class="cc-arrow">↗</div></a>
+      <a href="https://www.instagram.com/saturdyyyyyy/" target="_blank" class="cc"><div class="cc-label">// INSTAGRAM</div><div class="cc-val">@SATURDYYYYYY</div><div class="cc-arrow">↗</div></a>
+      <a href="https://discord.gg/QuCawQyX" target="_blank" class="cc"><div class="cc-label">// DISCORD</div><div class="cc-val">JOIN SERVER</div><div class="cc-arrow">↗</div></a>
+      <a href="tel:+918003110904" class="cc"><div class="cc-label">// PHONE</div><div class="cc-val">CONTACT</div><div class="cc-arrow">↗</div></a>
+    </div>
+  </section>
+
+  <!-- D — DIRECTOR'S CUT -->
+  <section id="directors-cut">
+    <div class="sec-tag">D — DIRECTOR'S CUT</div>
+    <div class="sec-head"><div class="sec-name scramble" data-text="DIRECTOR'S CUT">DIRECTOR'S CUT</div><div class="sec-sub">// JOURNEY</div></div>
+    <div class="dc-layout">
+      <div class="tl">
+        <div class="tl-item"><div class="tl-dot active"></div><div class="tl-year">JUL 2024 — PRESENT</div><div class="tl-title scramble" data-text="FREELANCE FRONTEND DEVELOPER">FREELANCE FRONTEND DEVELOPER</div><div class="tl-company">Independent Contractor · Rajasthan</div><div class="tl-desc">Developed 3+ responsive web apps using React & Node.js · Integrated PostgreSQL databases · Designed UIs in Figma before development</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">OCT 2024 — NOV 2024</div><div class="tl-title scramble" data-text="GRAPHIC DESIGNER">GRAPHIC DESIGNER</div><div class="tl-company">Internship Studio · India</div><div class="tl-desc">Designed brand identity for a local startup · Logo marks, typography, color palettes · Brand guidelines for social, print & web</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">SEP 2024 — NOV 2024</div><div class="tl-title scramble" data-text="CAMPUS AMBASSADOR">CAMPUS AMBASSADOR</div><div class="tl-company">My-Captain · Rajasthan</div><div class="tl-desc">Generated 300+ high-quality leads · Led on-campus marketing campaigns · Cross-functional brand messaging</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">JUN 2024 — 2028</div><div class="tl-title scramble" data-text="B.TECH — JECRC UNIVERSITY">B.TECH — JECRC UNIVERSITY</div><div class="tl-company">Jaipur, Rajasthan</div><div class="tl-desc">Bachelor of Technology — currently enrolled</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">JUL 2023 — DEC 2024</div><div class="tl-title scramble" data-text="BS IN DATA SCIENCE">BS IN DATA SCIENCE</div><div class="tl-company">IIT Madras · Online Program</div><div class="tl-desc">Data science principles, Python, statistical analysis</div></div>
+        <div class="tl-item dim"><div class="tl-dot"></div><div class="tl-year">MAR 2021 — APR 2022</div><div class="tl-title">HIGH SCHOOL</div><div class="tl-company">SaintSoldier Public School · India</div><div class="tl-desc">Where it all started.</div></div>
+      </div>
+      <div class="dc-side">
+        <div class="dc-side-label">// COURSES</div>
+        <div class="dc-course"><div class="dc-course-name">FULL STACK WEB DEV</div><div class="dc-course-src">UDEMY</div></div>
+        <div class="dc-course"><div class="dc-course-name">DATA SCIENCE</div><div class="dc-course-src">IIT MADRAS</div></div>
+        <div class="dc-side-label" style="margin-top:28px;">// TOOLS USED</div>
+        <div class="tools-wrap">
+          <div class="tool-tag">VSCODE</div><div class="tool-tag">GIT</div>
+          <div class="tool-tag">GITHUB</div><div class="tool-tag">FIGMA</div>
+          <div class="tool-tag">POSTMAN</div><div class="tool-tag">NOTION</div>
+          <div class="tool-tag">VERCEL</div><div class="tool-tag">RENDER</div>
+        </div>
+
+        <!-- 🎮 MINI GAME: BEAT CATCH -->
+        <div class="dc-side-label" style="margin-top:28px;">// BEAT CATCH · MINI GAME</div>
+        <div class="game-wrap">
+          <div class="game-screen" id="gameScreen">
+            <canvas id="gameCanvas" width="260" height="200"></canvas>
+            <div class="game-overlay" id="gameOverlay">
+              <div class="game-title">BEAT CATCH</div>
+              <div class="game-sub">catch the music notes</div>
+              <button class="game-start-btn" id="gameStartBtn">PLAY ▶</button>
+            </div>
+          </div>
+          <div class="game-hud">
+            <span class="game-score-label">SCORE</span>
+            <span class="game-score" id="gameScore">0</span>
+            <span class="game-score-label">BEST</span>
+            <span class="game-score" id="gameBest">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Y — NOW PLAYING -->
+  <section id="now-playing">
+    <div class="sec-tag">Y — NOW PLAYING</div>
+    <div class="sec-head"><div class="sec-name scramble" data-text="NOW PLAYING">NOW PLAYING</div><div class="sec-sub">// YOUR FREQUENCY</div></div>
+    <div class="np-layout">
+      <div class="np-card">
+        <div class="np-badge">▶ LIVE</div>
+        <div class="album-art" id="album-art-wrap">
+          <img id="album-img" src="" alt="" style="width:100%;height:100%;object-fit:cover;display:none;"/>
+          <span id="album-fallback">🎵</span>
+        </div>
+        <div class="np-info">
+          <div class="np-status" id="np-status">CONNECTING...</div>
+          <div class="track-name" id="track-name">NOT PLAYING</div>
+          <div class="track-artist" id="track-artist">OPEN SPOTIFY TO TUNE IN</div>
+          <div class="np-progress-bar"><div class="np-progress-fill" id="np-fill"></div></div>
+          <div class="wave-bars"><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div></div>
+        </div>
+      </div>
+
+      <!-- RECENT PLAYS -->
+      <div class="recent-plays-card">
+        <div class="cell-label">// RECENT PLAYS</div>
+        <div class="recent-list" id="recentList">
+          <div class="recent-item rp-loading">
+            <div class="ri-art">⏳</div>
+            <div class="ri-info"><div class="ri-name">LOADING...</div><div class="ri-artist">FETCHING FROM SPOTIFY</div></div>
+          </div>
+        </div>
+        <a href="https://open.spotify.com/user/uq5r5b6qb1mlwaxcfpa5twrhg" target="_blank" class="sp-open-btn">OPEN SPOTIFY PROFILE ↗</a>
+      </div>
+
+      <div class="music-quote-card">
+        <div class="mq-icon">♫</div>
+        <div class="mq-text">"Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything."</div>
+        <div class="mq-author">— PLATO</div>
+      </div>
+
+      <div class="genres-card">
+        <div class="cell-label">// LISTENING TO</div>
+        <div class="genre-tags">
+          <div class="genre-tag">INDIE</div><div class="genre-tag">LO-FI</div>
+          <div class="genre-tag">ALTERNATIVE</div><div class="genre-tag">HIP-HOP</div>
+          <div class="genre-tag">ELECTRONIC</div><div class="genre-tag">PUNK</div>
+          <div class="genre-tag">ROCK</div><div class="genre-tag">AMBIENT</div>
+        </div>
+        <svg viewBox="0 0 400 80" class="big-wave-svg" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="30" width="4" height="20" fill="#3cda7e" opacity="0.3" rx="2"><animate attributeName="height" values="20;60;20" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y" values="30;10;30" dur="1.2s" repeatCount="indefinite"/></rect>
+          <rect x="12" y="20" width="4" height="40" fill="#ebdb4c" opacity="0.4" rx="2"><animate attributeName="height" values="40;15;40" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y" values="20;32;20" dur="0.9s" repeatCount="indefinite"/></rect>
+          <rect x="24" y="10" width="4" height="60" fill="#3cda7e" opacity="0.5" rx="2"><animate attributeName="height" values="60;20;60" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y" values="10;30;10" dur="1.5s" repeatCount="indefinite"/></rect>
+          <rect x="36" y="25" width="4" height="30" fill="#ebdb4c" opacity="0.3" rx="2"><animate attributeName="height" values="30;55;30" dur="1.1s" repeatCount="indefinite"/><animate attributeName="y" values="25;12;25" dur="1.1s" repeatCount="indefinite"/></rect>
+          <rect x="48" y="15" width="4" height="50" fill="#3cda7e" opacity="0.4" rx="2"><animate attributeName="height" values="50;25;50" dur="0.8s" repeatCount="indefinite"/><animate attributeName="y" values="15;27;15" dur="0.8s" repeatCount="indefinite"/></rect>
+          <rect x="60" y="5" width="4" height="70" fill="#ebdb4c" opacity="0.25" rx="2"><animate attributeName="height" values="70;30;70" dur="1.7s" repeatCount="indefinite"/><animate attributeName="y" values="5;25;5" dur="1.7s" repeatCount="indefinite"/></rect>
+          <rect x="72" y="20" width="4" height="40" fill="#3cda7e" opacity="0.4" rx="2"><animate attributeName="height" values="40;10;40" dur="1.0s" repeatCount="indefinite"/><animate attributeName="y" values="20;35;20" dur="1.0s" repeatCount="indefinite"/></rect>
+          <rect x="84" y="12" width="4" height="56" fill="#ebdb4c" opacity="0.35" rx="2"><animate attributeName="height" values="56;22;56" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y" values="12;29;12" dur="1.4s" repeatCount="indefinite"/></rect>
+          <rect x="96" y="4" width="4" height="72" fill="#3cda7e" opacity="0.45" rx="2"><animate attributeName="height" values="72;28;72" dur="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="4;26;4" dur="1.6s" repeatCount="indefinite"/></rect>
+          <rect x="108" y="22" width="4" height="36" fill="#ebdb4c" opacity="0.3" rx="2"><animate attributeName="height" values="36;14;36" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y" values="22;33;22" dur="0.9s" repeatCount="indefinite"/></rect>
+          <rect x="120" y="14" width="4" height="52" fill="#3cda7e" opacity="0.2" rx="2"><animate attributeName="height" values="52;24;52" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="14;28;14" dur="1.8s" repeatCount="indefinite"/></rect>
+          <rect x="132" y="26" width="4" height="28" fill="#ebdb4c" opacity="0.35" rx="2"><animate attributeName="height" values="28;56;28" dur="1.1s" repeatCount="indefinite"/><animate attributeName="y" values="26;12;26" dur="1.1s" repeatCount="indefinite"/></rect>
+          <rect x="144" y="8" width="4" height="64" fill="#3cda7e" opacity="0.4" rx="2"><animate attributeName="height" values="64;28;64" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y" values="8;26;8" dur="1.2s" repeatCount="indefinite"/></rect>
+          <rect x="156" y="18" width="4" height="44" fill="#ebdb4c" opacity="0.5" rx="2"><animate attributeName="height" values="44;18;44" dur="0.75s" repeatCount="indefinite"/><animate attributeName="y" values="18;31;18" dur="0.75s" repeatCount="indefinite"/></rect>
+        </svg>
+      </div>
+    </div>
+    <div class="np-note">// SPOTIFY API · CONNECT BACKEND IN script.js FOR LIVE DATA · <a href="https://open.spotify.com/user/uq5r5b6qb1mlwaxcfpa5twrhg" target="_blank" style="color:var(--green);">PROFILE ↗</a></div>
+  </section>
+
+  <!-- BOTTOM -->
+  <div class="bottom-bar">
+    <div class="bottom-copy">© 2025 SATURDYYYY · HARSH T · ALL DROPS RESERVED</div>
+    <div class="bottom-links">
+      <a href="https://github.com/Saturdyyyy" target="_blank" class="bl">GITHUB</a>
+      <a href="https://www.linkedin.com/in/harsh-t-b8712623b" target="_blank" class="bl">LINKEDIN</a>
+      <a href="https://www.instagram.com/saturdyyyyyy/" target="_blank" class="bl">INSTAGRAM</a>
+      <a href="mailto:arnodelo4@gmail.com" class="bl">EMAIL</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
