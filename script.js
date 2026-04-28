@@ -240,7 +240,7 @@ if(gc) gc.addEventListener('mousemove', e => { const r=gc.getBoundingClientRect(
 // ─────────────────────────────────────────
 
 // 🔁 Replace with your deployed backend URL
-const BACKEND = 'http://127.0.0.1:3001';
+const BACKEND = 'https://saturdyyyy-server.onrender.com';
 let isPlaying = false;
 
 const miniPlay = document.getElementById('miniPlay');
