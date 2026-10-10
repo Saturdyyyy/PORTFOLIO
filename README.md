@@ -1,6 +1,6 @@
 # SATURDYYYY — Harsh T
 
-> Personal portfolio of Harsh Tatiwal · Frontend Developer & UI/UX Designer
+> Personal portfolio of Harsh T · Frontend Developer & UI/UX Designer
 
 ## 🌐 Live
 ([https://saturdyyyy.vercel.app](https://portfolio-saturdyyyy.vercel.app/))
