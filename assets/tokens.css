@@ -1,0 +1,48 @@
+/* ============================================================
+   THEME TOKENS: change the brand here and the whole site follows.
+   Semantic names match the brief (color.background, etc.).
+   ============================================================ */
+:root,
+:root[data-theme="dark"] {
+  --color-background: #0b0b0c;
+  --color-surface: #141416;
+  --color-surface-2: #1b1b1e;
+  --color-text-primary: #f2f2ee;
+  --color-text-secondary: #a9a9a2;
+  --color-border: #2a2a2e;
+  --color-accent-primary: #3cda7e;
+  --color-on-accent: #06210f;
+  --color-accent-secondary: #ebdb4c;
+  --color-success: #3cda7e;
+  --color-error: #ff6b6b;
+  --color-focus: #ebdb4c;
+  --dot: rgba(255,255,255,.06);
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --color-background: #f6f5f0;
+  --color-surface: #ffffff;
+  --color-surface-2: #efede6;
+  --color-text-primary: #141414;
+  --color-text-secondary: #55554e;
+  --color-border: #dddad0;
+  --color-accent-primary: #0f7a41;
+  --color-on-accent: #ffffff;
+  --color-accent-secondary: #8a7400;
+  --color-success: #0f7a41;
+  --color-error: #c62828;
+  --color-focus: #0f7a41;
+  --dot: rgba(0,0,0,.07);
+  color-scheme: light;
+}
+:root {
+  --font-display: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
+  --font-body: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fragment Mono', ui-monospace, monospace;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 72px; --space-9: 104px;
+  --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px; --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.08);
+  --shadow-md: 0 10px 30px rgba(0,0,0,.12);
+  --max: 1160px;
+}
